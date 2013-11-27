@@ -2,11 +2,11 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="../aosp"
+           fetch=".."
            review="android-review.googlesource.com" />
 
   <remote  name="github"
-           fetch="../cyanogenmod/cm-11.0"
+           fetch=".."
            review="review.cyanogenmod.org" />
 
   <remote  name="private"
