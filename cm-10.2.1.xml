@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
   <remote  name="github"
@@ -12,7 +12,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/stable/cm-10.2"
+  <default revision="refs/tags/cm-10.2.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
