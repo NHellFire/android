@@ -6,15 +6,19 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-5.0.2_r1" />
 
-  <remote  name="github"
+  <remote  name="mirror"
            fetch=".."
+           review="review.cyanogenmod.org" />
+
+  <remote  name="github"
+           fetch="https://github.com"
            review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
   <default revision="refs/heads/cm-12.0"
-           remote="github"
+           remote="mirror"
            sync-c="true"
            sync-j="4" />
 
