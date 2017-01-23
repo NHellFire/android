@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
+  <remote  name="mirror"
            fetch=".."
+           review="review.lineageos.org" />
+
+  <remote  name="github"
+           fetch="https://github.com"
            review="review.lineageos.org" />
 
   <remote  name="private"
@@ -14,7 +18,7 @@
            revision="refs/tags/android-8.0.0_r3" />
 
   <default revision="refs/heads/lineage-15.0"
-           remote="github"
+           remote="mirror"
            sync-c="true"
            sync-j="4" />
 
