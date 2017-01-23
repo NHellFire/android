@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
+  <remote  name="mirror"
            fetch=".."
            review="review.lineageos.org" />
+
+  <remote  name="github"
+           fetch="https://github.com"
+           review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -14,7 +18,7 @@
            revision="refs/tags/android-7.1.1_r9" />
 
   <default revision="refs/heads/cm-14.1"
-           remote="github"
+           remote="mirror"
            sync-c="true"
            sync-j="4" />
 
